@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oq+hBHuqfYt2jpqHxdZQdCNkwct/ZLoM8zwpdaV1zSUtN3qpAzNIEBJk5CsECCGLWK0Y8j85NXBPIeJZgijb7A==",
+  "dgSpecHash": "eJPgg5SJacHmsE/SsfjW7VoK7IbfAbNcbReiYKqOnflpS+qCVD9t24nufMgAz0QKu1h3rn43oBr96Tmy0mXvFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ana.rodrigues\\Documents\\PROJETO FINAL\\PROJETO_LOGIN\\PROJETO_LOGIN.csproj",
+  "projectFilePath": "C:\\Users\\ana.rodrigues\\Documents\\GIT_COD\\cod_back\\PROJETO_LOGIN.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ana.rodrigues\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ana.rodrigues\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",

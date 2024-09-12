@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ana.rodrigues\\Documents\\PROJETO FINAL\\PROJETO_LOGIN\\PROJETO_LOGIN.csproj": {}
+    "C:\\Users\\ana.rodrigues\\Documents\\GIT_COD\\cod_back\\PROJETO_LOGIN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ana.rodrigues\\Documents\\PROJETO FINAL\\PROJETO_LOGIN\\PROJETO_LOGIN.csproj": {
+    "C:\\Users\\ana.rodrigues\\Documents\\GIT_COD\\cod_back\\PROJETO_LOGIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ana.rodrigues\\Documents\\PROJETO FINAL\\PROJETO_LOGIN\\PROJETO_LOGIN.csproj",
+        "projectUniqueName": "C:\\Users\\ana.rodrigues\\Documents\\GIT_COD\\cod_back\\PROJETO_LOGIN.csproj",
         "projectName": "PROJETO_LOGIN",
-        "projectPath": "C:\\Users\\ana.rodrigues\\Documents\\PROJETO FINAL\\PROJETO_LOGIN\\PROJETO_LOGIN.csproj",
+        "projectPath": "C:\\Users\\ana.rodrigues\\Documents\\GIT_COD\\cod_back\\PROJETO_LOGIN.csproj",
         "packagesPath": "C:\\Users\\ana.rodrigues\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ana.rodrigues\\Documents\\PROJETO FINAL\\PROJETO_LOGIN\\obj\\",
+        "outputPath": "C:\\Users\\ana.rodrigues\\Documents\\GIT_COD\\cod_back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ana.rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config"
