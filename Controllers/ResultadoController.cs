@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PROJETO_LOGIN.Context;
 using PROJETO_LOGIN.Entities;
 using System.Threading.Tasks;
@@ -16,24 +17,25 @@ namespace PROJETO_LOGIN.Controllers
             _context = context;
         }
 
-        [HttpPost("salvar")]
-        public async Task<IActionResult> SalvarResultado([FromBody] Resultado resultado)
-        {
-            if (resultado == null)
-            {
-                return BadRequest("Dados inválidos.");
-            }
+       [HttpPost("salvar")]
+public async Task<IActionResult> SalvarResultado([FromBody] Resultado resultado)
+{
+    try
+    {
+        // Execute um comando SQL bruto para inserir o resultado no banco de dados
+        await _context.Database.ExecuteSqlInterpolatedAsync($@"
+            INSERT INTO SiteQuizz.Resultado 
+            (Relatorio_Perfil, Resultado_Teste) 
+            VALUES 
+            ({resultado.Relatorio_Perfil}, {resultado.Resultado_Teste})");
 
-            try
-            {
-                _context.resultado.Add(resultado);
-                await _context.SaveChangesAsync();
-                return Ok(new { message = "Resultado salvo com sucesso!" });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Erro ao salvar resultado: {ex.Message}");
-            }
-        }
+        return Ok(new { message = "Resultado salvo com sucesso!" });
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { message = $"Erro ao salvar resultado: {ex.Message}" });
+    }
+}
+
     }
 }

@@ -11,8 +11,8 @@ using PROJETO_LOGIN.Context;
 namespace PROJETO_LOGIN.Migrations
 {
     [DbContext(typeof(QuizContext))]
-    [Migration("20240919192942_AddTabelaResultado")]
-    partial class AddTabelaResultado
+    [Migration("20240926124232_CriarResultados")]
+    partial class CriarResultados
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,23 @@ namespace PROJETO_LOGIN.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+
+            modelBuilder.Entity("PROJETO_LOGIN.Entities.Resultado", b =>
+                {
+                    b.Property<string>("Relatorio_Perfil")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Resultado_Teste")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Tabela_Resposta_Teste")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Tabela_Tipo_Pergunta")
+                        .HasColumnType("int");
+
+                    b.ToTable("Resultado");
+                });
 
             modelBuilder.Entity("PROJETO_LOGIN.Entities.Usuario", b =>
                 {
